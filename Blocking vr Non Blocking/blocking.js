@@ -5,6 +5,7 @@ console.time("Inicio");
 
 const usuario1 = obtenerUsuarioSyn(1);
 console.log("Usuario1:", usuario1);
+
 const usuario2 = obtenerUsuarioSyn(2);
 console.log("Usuario2:", usuario2);
 

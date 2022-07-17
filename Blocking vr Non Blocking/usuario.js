@@ -13,6 +13,19 @@ const obtenerUsuarioSyn = (id) => {
   };
 };
 
+const obtenerUsuarioAsyn = (id, tarea) => {
+  const usuario = {
+    id,
+    nombre: `Usuario: ${id}`,
+  };
+
+  // La función setTimeout se utiliza para ejecutar una funcion luego de cierto tiempo
+  setTimeout(() => {
+    tarea(usuario);
+  }, 3000);
+};
+
 module.exports = {
   obtenerUsuarioSyn,
+  obtenerUsuarioAsyn,
 };
